@@ -51,7 +51,7 @@ def TEST2(l, test_input, starting_point, relative_base):
             l = l_update(l, i+1, relative_base, mode1, test_input)
             i = i+2
         elif opcode == 4:
-            #print(n1, i)
+            print(n1, i)
             result.append(n1)
             i = i+2
             #if len(result)==2:
@@ -107,7 +107,7 @@ def TEST3(l, test_input, starting_point, relative_base):
             #print(n1, i)
             result.append(n1)
             i = i+2
-            if len(result)==3:
+            if len(result)==1:
                 return result, l, i, relative_base
         elif opcode == 5:
             if n1 != 0:
